@@ -15,11 +15,20 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Complejo complejo = new Complejo();
+        ViewBag.cabañas = grupo.DevolverCabaña();
         return View();
+    }
+    public IActionResult infoCabaña(int id)
+    {
+        Complejo complejo = new Complejo();
+        ViewBag.cabañas[id] = grupo.GetCabaña();
+        return infoCabaña();
     }
 
     public IActionResult Privacy()
     {
+
         return View();
     }
 
