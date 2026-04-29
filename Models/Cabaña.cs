@@ -22,10 +22,6 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
         {
             return nombre;
         }
-        public string getImage()
-        {
-            return foto;
-        }
         public int getID()
         {
             return dni;
