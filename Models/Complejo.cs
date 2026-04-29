@@ -2,11 +2,11 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
  {
  public class Complejo
     {
-            private Dictionary <int, Complejo> cabañas = new Dictionary <int, Complejo>();
+            private Dictionary <int, Cabaña> cabañas = new Dictionary <int, Cabaña>();
     
         public Complejo()
         {
-      Dictionary <int, Complejo> cabañas = new Dictionary <int, Complejo>();
+      Dictionary <int, Cabaña> cabañas = new Dictionary <int, Cabaña>();
         } 
         private void CargaDatos()
         {
@@ -16,6 +16,21 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
             cabañas.Add(Cabaña1);
             cabañas.Add(Cabaña2);
             cabañas.Add(Cabaña3);
+        }
+        public Dictionary<int,Cabaña> DevolverCabañas()
+        {
+            return cabañas;
+        }
+        public Cabaña GetCabaña(int id)
+        {
+            if(cabañas.ContainsKey(id) = true)
+            {
+                return cabañas[id];
+            }
+            else
+            {
+                return null;
+            }
         }
     }
    
