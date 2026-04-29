@@ -14,7 +14,7 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
         this.id=id;
         this.nombre=nombre;
         this.descripcion=descripcion;
-        this..capacidad=capacidad;
+        this.capacidad=capacidad;
         List<string> fotos = new List<string>();
         List<string> ambientes = new List<string>();
         } 
