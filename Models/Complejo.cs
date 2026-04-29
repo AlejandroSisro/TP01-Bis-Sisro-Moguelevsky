@@ -33,5 +33,3 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
             }
         }
     }
-   
-}
