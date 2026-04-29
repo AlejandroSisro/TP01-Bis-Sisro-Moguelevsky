@@ -1,5 +1,4 @@
- 
- namespace TP1BIS_SISRO_MOGUELEVSKY
+namespace TP1BIS_SISRO_MOGUELEVSKY
  {
  public class Cabaña
     {
