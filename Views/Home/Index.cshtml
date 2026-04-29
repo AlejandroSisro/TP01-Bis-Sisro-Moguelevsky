@@ -1,48 +1,45 @@
 @{
-    ViewData["Title"] = "Grupos de Trabajo";
+    ViewData["Title"] = "Cabañas";
 
 }
 <body>
 <h1>Grupos de Trabajo - Programacion - Equipo Inovacion</h1>
 <img src=Imagenes/Logo> 
-    @foreach(Integrante item in viewBag.integrantes)
+    @foreach(Cabaña item in viewBag.cabañas)
     {
-     <a href= @Url.Action("Integrantes", "Home" new (Integrante item)) Ver info de item</a>
+     <a href= @Url.Action("Cabañas", "Home" new (cabañas item)) Ver info de item</a>
     }
 <section>    
 <div>
-    <h2>El Integrante 1 es @viewBag.integrantes[0].getName()</h2>
-    <img src=Imagenes/@viewBag.integrantes[0].getImage()>
-    <h3>DNI: @viewBag.integrantes[0].getID()</h3>
-    <h3>Fecha de nacimiento: @viewBag.integrantes[0].getDate()</h3>
-    @for(int i = 0; i < @viewBag.integrantes[0].getRelatives().Count; i++)
+    <h2>La cabaña 1 es @viewBag.cabañas[0].getName()</h2>
+    <h3>ID: @viewBag.cabañas[0].getID()</h3>
+    <h3>Descripcion: @viewBag.cabañas[0].getDescription()</h3>
+    <h3>ID: @viewBag.cabañas[0].getID()</h3>
+    @for(int i = 0; i < @viewBag.cabañas[0].getImages().Count; i++)
     {
-        @Console.WriteLine(@viewBag.integrantes[0].getRelatives()[i]);
+        @Console.WriteLine(@viewBag.cabañas[0].getImages()[i]);
     }
-    @for(int i = 0; i < @viewBag.integrantes[0].getInterests().Count; i++)
+    @for(int i = 0; i < @viewBag.cabañas[0].getEnvironments().Count; i++)
     {
-        <h3>(@(viewBag.integrantes[0].getInterests())[i]);</h3>
+        <h3>(@(viewBag.cabañas[0].getEnvironments())[i]);</h3>
     }
-    @viewBag.integrantes[integrantes[0].getID()];
+    @viewBag.cabañas[cabañas[0].getID()];
 </div>
 <div>
-    <h2>El Integrante 2 es @viewBag.integrantes[1].getName()</h2>
-    <img src=Imagenes/@viewBag.integrantes[1].getImage()>
-    <h3>DNI: @viewBag.integrantes[1].getID()</h3>
-    <h3>Fecha de nacimiento: @viewBag.integrantes[1].getDate()</h3>
-    @for(int i = 0; i < @viewBag.integrantes[1].getRelatives().Count; i++)
+    <h2>La cabaña 1 es @viewBag.cabañas[1].getName()</h2>
+    <h3>ID: @viewBag.cabañas[1].getID()</h3>
+    <h3>Descripcion: @viewBag.cabañas[1].getDescription()</h3>
+    <h3>ID: @viewBag.cabañas[1].getID()</h3>
+    @for(int i = 0; i < @viewBag.cabañas[1].getImages().Count; i++)
     {
-        <h3>Familiares</h3>
-        @Console.WriteLine(@viewBag.integrantes[1].getRelatives()[i]);
+        @Console.WriteLine(@viewBag.cabañas[0].getImages()[i]);
     }
-    @for(int i = 0; i < @viewBag.integrantes[1].getInterests().Count; i++)
+    @for(int i = 1; i < @viewBag.cabañas[1].getEnvironments().Count; i++)
     {
-        <h3>Intereses</h3>
-        <h3>(@(viewBag.integrantes[1].getInterests())[i]);</h3>
+        <h3>(@(viewBag.cabañas[1].getEnvironments())[i]);</h3>
     }
-    @viewBag.integrantes[integrantes[1].getID()];
+    @viewBag.cabañas[cabañas[1].getID()];
 </div>
 </section>       
 </body>
-
 
