@@ -17,9 +17,32 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
         this.capacidad=capacidad;
         List<string> fotos = new List<string>();
         List<string> ambientes = new List<string>();
+        }
+        public string getName()
+        {
+            return nombre;
+        }
+        public string getImage()
+        {
+            return foto;
+        }
+        public int getID()
+        {
+            return dni;
+        }
+        public string getDescription()
+        {
+            return descripcion;
+        }
+        public List<string> getImages()
+        {
+            return fotos;
+        }
+        public List<string> getEnvironments()
+        {
+            return ambientes;
         } 
       
     }
    
 }
- 
