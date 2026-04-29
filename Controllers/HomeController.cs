@@ -16,7 +16,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         Complejo complejo = new Complejo();
-        ViewBag.cabañas = complejo.DevolverCabaña();
+        ViewBag.cabañas = complejo.DevolverCabañas();
         return View();
     }
     public IActionResult infoCabaña(int id)
