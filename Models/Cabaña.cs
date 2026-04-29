@@ -6,8 +6,8 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
            private string nombre;
            private string descripcion;        
            private int capacidad;
-            private list<string> fotos;
-            private list<string> ambientes;
+            private List<string> fotos;
+            private List<string> ambientes;
     
         public Cabaña(int id,string nombre,string descripcion,int capacidad)
         {
@@ -15,7 +15,8 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
         this.nombre=nombre;
         this.descripcion=descripcion;
         this..capacidad=capacidad;
-        list<string> fotos=new list<string>;
+        List<string> fotos = new List<string>();
+        List<string> ambientes = new List<string>();
         } 
       
     }
