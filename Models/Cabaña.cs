@@ -11,8 +11,8 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
     
         public Cabaña(int id,string nombre,string descripcion,int capacidad)
         {
-        this.id=id
-        this.nombre=nombre
+        this.id=id;
+        this.nombre=nombre;
         this.descripcion=descripcion;
         this..capacidad=capacidad;
         list<string> fotos=new list<string>;
@@ -21,3 +21,4 @@ namespace TP1BIS_SISRO_MOGUELEVSKY
     }
    
 }
+ 
