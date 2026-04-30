@@ -14,7 +14,7 @@
     <h2>La cabaña 1 es @viewBag.cabañas[0].getName()</h2>
     <h3>ID: @viewBag.cabañas[0].getID()</h3>
     <h3>Descripcion: @viewBag.cabañas[0].getDescription()</h3>
-    <h3>ID: @viewBag.cabañas[0].getID()</h3>
+    <h3>Capacidad: @viewBag.cabañas[0].getCapacity()</h3>
     @for(int i = 0; i < @viewBag.cabañas[0].getImages().Count; i++)
     {
         @Console.WriteLine(@viewBag.cabañas[0].getImages()[i]);
@@ -29,10 +29,10 @@
     <h2>La cabaña 2 es @viewBag.cabañas[1].getName()</h2>
     <h3>ID: @viewBag.cabañas[1].getID()</h3>
     <h3>Descripcion: @viewBag.cabañas[1].getDescription()</h3>
-    <h3>ID: @viewBag.cabañas[1].getID()</h3>
+    <h3>Capacidad: @viewBag.cabañas[1].getCapacity()</h3>
     @for(int i = 0; i < @viewBag.cabañas[1].getImages().Count; i++)
     {
-        @Console.WriteLine(@viewBag.cabañas[0].getImages()[i]);
+        @Console.WriteLine(@viewBag.cabañas[1].getImages()[i]);
     }
     @for(int i = 1; i < @viewBag.cabañas[1].getEnvironments().Count; i++)
     {
@@ -43,8 +43,8 @@
 <div>
     <h2>La cabaña 3 es @viewBag.cabañas[2].getName()</h2>
     <h3>ID: @viewBag.cabañas[2].getID()</h3>
-    <h3>Descripcion: @viewBag.cabañas[1].getDescription()</h3>
-    <h3>ID: @viewBag.cabañas[2].getID()</h3>
+    <h3>Descripcion: @viewBag.cabañas[2].getDescription()</h3>
+    <h3>Capacidad: @viewBag.cabañas[2].getCapacity()</h3>
     @for(int i = 0; i < @viewBag.cabañas[2].getImages().Count; i++)
     {
         @Console.WriteLine(@viewBag.cabañas[2].getImages()[i]);
@@ -56,20 +56,19 @@
     @viewBag.cabañas[cabañas[2].getID()];
 </div>
 <div>
-    <h2>La cabaña 1 es @viewBag.cabañas[1].getName()</h2>
-    <h3>ID: @viewBag.cabañas[1].getID()</h3>
-    <h3>Descripcion: @viewBag.cabañas[1].getDescription()</h3>
-    <h3>ID: @viewBag.cabañas[1].getID()</h3>
-    @for(int i = 0; i < @viewBag.cabañas[1].getImages().Count; i++)
+    <h2>La cabaña 4 es @viewBag.cabañas[3].getName()</h2>
+    <h3>ID: @viewBag.cabañas[3].getID()</h3>
+    <h3>Descripcion: @viewBag.cabañas[3].getDescription()</h3>
+    <h3>Capacidad: @viewBag.cabañas[3].getCapacity()</h3>
+    @for(int i = 0; i < @viewBag.cabañas[3].getImages().Count; i++)
     {
-        @Console.WriteLine(@viewBag.cabañas[0].getImages()[i]);
+        @Console.WriteLine(@viewBag.cabañas[3].getImages()[i]);
     }
-    @for(int i = 1; i < @viewBag.cabañas[1].getEnvironments().Count; i++)
+    @for(int i = 1; i < @viewBag.cabañas[3].getEnvironments().Count; i++)
     {
-        <h3>(@(viewBag.cabañas[1].getEnvironments())[i]);</h3>
+        <h3>(@(viewBag.cabañas[3].getEnvironments())[i]);</h3>
     }
-    @viewBag.cabañas[cabañas[1].getID()];
+    @viewBag.cabañas[cabañas[3].getID()];
 </div>
 </section>       
 </body>
-
