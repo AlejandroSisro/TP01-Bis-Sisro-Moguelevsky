@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Info cabañas";
+
+}
+<body>
+<h1>Info Cabañas</h1>
+@foreach(Cabaña item in viewBag.cabañas)
+    {
+     <a href= @Url.Action("Cabañas", "Home" new (Cabaña item)) Ver info de item</a>
+    }
+<div>
+    <h2>La cabaña identificada por @viewBag.id es @viewBag.cabañas[id].getName()</h2>
+    <h3>ID: @viewBag.cabañas[id].getID()</h3>
+    <h3>Descripcion: @viewBag.cabañas[id].getDescription()</h3>
+    <h3>Capacidad: @viewBag.cabañas[id].getCapacity()</h3>
+    @for(int i = 0; i < @viewBag.cabañas[id].getImages().Count; i++)
+    {
+        @Console.WriteLine(@viewBag.cabañas[id].getImages()[i]);
+    }
+    @for(int i = 0; i < @viewBag.cabañas[id].getEnvironments().Count; i++)
+    {
+        <h3>(@(viewBag.cabañas[id].getEnvironments())[i]);</h3>
+    }
+    @viewBag.cabañas[cabañas[id].getID()];
+</div>
+<p>Familiarizate con el complejo al que <a href="Index.cshtml">ESTA CABAÑA PERTENECE</a></p>
+</body>
